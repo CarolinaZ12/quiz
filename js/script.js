@@ -13,13 +13,13 @@ $(document).ready(function() {
     });
         
     function questionOne(q1Result){
-        if (q1Result === "Reading"){
+        if (q1Result === "Water"){
             return 1;
         }
-        else if (q1Result === "Coding"){
+        else if (q1Result === "Fire"){
             return 2;
         }
-        else if (q1Result === "Sports"){
+        else if (q1Result === "Earth"){
             return 3;
         }
         else if (q1Result === "Designing"){
@@ -28,13 +28,13 @@ $(document).ready(function() {
     }
     
     function questionTwo(q2Result){
-        if (q2Result === "Pancakes"){
+        if (q2Result === "Salimander"){
             return 1;
         }
-        else if (q2Result === "Waffles"){
+        else if (q2Result === "Frog"){
             return 2;
         }
-        else if (q2Result === "French Toast"){
+        else if (q2Result === "Turtle"){
             return 3;
         }
     }
@@ -51,19 +51,19 @@ $(document).ready(function() {
         }  
         
     }
-    
+
   function answer(totalScore){
       if (totalScore <= 4){
-          return "Snapchat";
+          return "Squirtle";
           
       }
       
      else if (totalScore >4 && totalScore <=  6){
-          return "Instagram";
+          return "";
      }
      
      else if(totalScore> 6){
-        return "Facebook";
+        return "Charmander";
      }
           
       
