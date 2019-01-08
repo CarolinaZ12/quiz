@@ -1,15 +1,16 @@
 .header {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     color: #0f65ef;
     font-weight: bold;
     font-size:15px;
 }
-
 .logo {
-    width: 125px;
+    width:125px;
 }
-
+a{
+    
+}
 body {
     background-color: white;
 }
@@ -27,12 +28,10 @@ body {
     border-radius: 50%;
     width: 50px;
 }
-
 a {
     color: #0f65ef;
     font-weight: bold;
 }
-
 #tom {
     color: grey;
 }
@@ -43,15 +42,13 @@ a {
 
 button {
     margin-top: 10px;
-    color: white;
-    background-color: red;
-    font-size: 40px;
-    border-radius: 25px;
+    color:black;
+    font-size: 15px;
+    border-radius: 15px;
     border:3px groove black ;
     font-family: monospace;
 }
 
 body{
-
     margin-left:20px;
 }
