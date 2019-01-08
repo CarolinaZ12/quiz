@@ -1,7 +1,7 @@
 /* global $ */
 
 $(document).ready(function() {
-    $("button").click(function() {
+    $("#clicker").click(function() {
         var name = $("#name").val();
         var finalAnswer = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
