@@ -22,7 +22,7 @@ $(document).ready(function() {
         else if (q1Result === "Earth"){
             return 3;
         }
-        else if (q1Result === "Designing"){
+        else if (q1Result === "Water"){
             return 4;
         }
     }
@@ -59,7 +59,7 @@ $(document).ready(function() {
       }
       
      else if (totalScore >4 && totalScore <=  6){
-          return "";
+          return "Bulbasar";
      }
      
      else if(totalScore> 6){
