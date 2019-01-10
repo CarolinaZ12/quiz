@@ -3,8 +3,7 @@
 $(document).ready(function() {
     $("#clicker").click(function() {
         var name = $("#name").val();
-        var finalAnswer = "TBD";
-        var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
+        var finalAnswer = "Your starter pokemon is...";
         var q1Result = $("#question1").val();
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
@@ -13,22 +12,19 @@ $(document).ready(function() {
     });
         
     function questionOne(q1Result){
-        if (q1Result === "Water"){
+        if (q1Result === "Fire"){
             return 1;
         }
-        else if (q1Result === "Fire"){
+        else if (q1Result === "Earth"){
             return 2;
         }
-        else if (q1Result === "Earth"){
-            return 3;
-        }
         else if (q1Result === "Water"){
-            return 4;
+            return 3;
         }
     }
     
     function questionTwo(q2Result){
-        if (q2Result === "Salimander"){
+        if (q2Result === "Salamander"){
             return 1;
         }
         else if (q2Result === "Frog"){
@@ -40,13 +36,13 @@ $(document).ready(function() {
     }
     
     function questionThree(q3Result){
-        if (q3Result.length >= 3){
+        if (q3Result=== "Summer"){
             return 1;
         }
-        else if (q3Result.length >= 6){
+        else if (q3Result==="Spring"){
             return 2;
         }
-        else if (q3Result.length > 6) {
+        else if (q3Result==="Winter") {
             return 3;
         }  
         
@@ -54,16 +50,16 @@ $(document).ready(function() {
 
   function answer(totalScore){
       if (totalScore <= 4){
-          return "Squirtle";
+          return "Your starter pokemon is Charmander!";
           
       }
       
      else if (totalScore >4 && totalScore <=  6){
-          return "Bulbasar";
+          return "Your starter pokemon is Bulbasaur!";
      }
      
      else if(totalScore> 6){
-        return "Charmander";
+        return "Your starter pokemon is Squirtle!";
      }
           
       
