@@ -8,7 +8,8 @@ $(document).ready(function() {
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
         var totalScore = questionOne(q1Result) + questionTwo(q2Result) + questionThree(q3Result);
-        $(".result").text(answer(totalScore));
+        $("#word").text(answer(totalScore));
+        $("#clicker").hide();
     });
         
     function questionOne(q1Result){
