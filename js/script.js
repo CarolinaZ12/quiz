@@ -50,19 +50,27 @@ $(document).ready(function() {
     }
 
   function answer(totalScore){
+      var imgSrc;
+      var cute=["","","https://www.youtube.com/watch?v=T71dXmb2ClU"];
+      
       if (totalScore <= 4){
+          imgSrc="Char.gif";
+          $("#ending").attr("src",imgSrc);
           return "Your starter pokemon is Charmander!";
-          
       }
       
      else if (totalScore >4 && totalScore <=  6){
+         imgSrc="bulb.gif";
+         $("#ending").attr("src",imgSrc);
           return "Your starter pokemon is Bulbasaur!";
+          
      }
      
      else if(totalScore> 6){
-        return "Your starter pokemon is Squirtle!";
+         imgSrc="LHQY.gif";
+         $("#ending").attr("src",imgSrc);
+         return "Your starter pokemon is Squirtle!";
      }
-          
       
   }
 
