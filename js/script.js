@@ -2,7 +2,6 @@
 
 $(document).ready(function() {
     $("#clicker").click(function() {
-        var name = $("#name").val();
         var finalAnswer = "Your starter pokemon is...";
         var q1Result = $("#question1").val();
         var q2Result = $("#question2").val();
@@ -48,28 +47,29 @@ $(document).ready(function() {
         }  
         
     }
+    
 
   function answer(totalScore){
       var imgSrc;
-      var cute=["","","https://www.youtube.com/watch?v=T71dXmb2ClU"];
-      
+       var name = $("#name").val();
+       
       if (totalScore <= 4){
           imgSrc="Char.gif";
           $("#ending").attr("src",imgSrc);
-          return "Your starter pokemon is Charmander!";
+          return name + " your starter pokemon is Charmander!";
       }
       
      else if (totalScore >4 && totalScore <=  6){
          imgSrc="bulb.gif";
          $("#ending").attr("src",imgSrc);
-          return "Your starter pokemon is Bulbasaur!";
+          return name+ " your starter pokemon is Bulbasaur!";
           
      }
      
      else if(totalScore> 6){
          imgSrc="LHQY.gif";
          $("#ending").attr("src",imgSrc);
-         return "Your starter pokemon is Squirtle!";
+         return name + " your starter pokemon is Squirtle!";
      }
       
   }
