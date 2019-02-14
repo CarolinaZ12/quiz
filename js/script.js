@@ -12,37 +12,37 @@ $(document).ready(function() {
     });
         
     function questionOne(q1Result){
-        if (q1Result === "Fire"){
+        if (q1Result === "Fire" || q1Result==="fire"){
             return 1;
         }
-        else if (q1Result === "Earth"){
+        else if (q1Result === "Earth" || q1Result==="earth"){
             return 2;
         }
-        else if (q1Result === "Water"){
+        else if (q1Result === "Water"|| q1Result==="water"){
             return 3;
         }
     }
     
     function questionTwo(q2Result){
-        if (q2Result === "Salamander"){
+        if (q2Result === "Salamander" || q2Result==="salamander"){
             return 1;
         }
-        else if (q2Result === "Frog"){
+        else if (q2Result === "Frog" || q2Result==="frog"){
             return 2;
         }
-        else if (q2Result === "Turtle"){
+        else if (q2Result === "Turtle" || q2Result==="turtle"){
             return 3;
         }
     }
     
     function questionThree(q3Result){
-        if (q3Result=== "Summer"){
+        if (q3Result=== "Summer" || q3Result==="summer"){
             return 1;
         }
-        else if (q3Result==="Spring"){
+        else if (q3Result==="Spring"|| q3Result==="spring"){
             return 2;
         }
-        else if (q3Result==="Winter") {
+        else if (q3Result==="Winter"|| q3Result==="winter") {
             return 3;
         }  
         
